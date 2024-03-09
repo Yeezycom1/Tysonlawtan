@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio van Tyson Lawtan</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+<div id="header">
+  <div class="container">
+      <nav>
+        <img src="D:\Ontwerp zonder titel.png" class="logo">
+       <ul>
+        <li><a href="file:///D:/Computer/Downloads/HTML%20CURSUS/1.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="file:///D:/Computer/Downloads/HTML%20CURSUS/Link%20pagina%201.html">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+
+    <button input type="button"  class="OOTT" ><li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvrcSRvBGmwrXkwqxcncJllqxWhZPsslcmpcfcnljPNxMDBrPRnDXTKfpbrKDLzWWNJPXB">Contact</a></li><img="D:\EMAIl.png" class="OOT"></button> 
+     
+        
+      </ul>
+    </nav>
+    <div class="header-text">
+        <p class="R1">''School student''</p>
+        <h1>Hello, I'm<span> Tyson</span><br>and I hope to graduate this <span><em>year</em></span></h1><h1></h1>
+    </div>
+  </div>
+</div>
+<!-- ------about------ -->  
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="D:\Computer\Downloads\dikke bmw bewerkt wow (2).jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nostrum explicabo cum deleniti corrupti. Quam similique quibusdam facere quasi aliquid, ad debitis adipisci eos repudiandae officia harum non doloremqueLorem, ipsum dolor sit amet consectetur adipisicing elit. Est nostrum explicabo cum deleniti corrupti. Quam similique quibusdam facere quasi aliquid, ad debitis adipisci eos repudiandae officia harum non doloremque</p>
+
+
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Designing</span><br>Website layouts</li>
+                            <li><span>Cleaning</span><br>Houses</li>
+                            <li><span> Mini ICT</span><br>Helping people</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2024</span><br>Stage at: Hedin Automotive</li>
+                            <li><span>2023</span><br>Stage at: RepairHouse</li>
+                            <li><span>2022</span><br>Stage at: Coen Car Sales</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Roc ter aa</span><br>Expert ICT</li>
+                            <li><span>SG Were Di</span><br>Leerjaar: 1, 2, 3, 4 (current),</li>
+                            <li><span>SBO de Zonneijzer</span><br>Year 1 to year 8</li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+ 
+    function opentab(tabname){
+      for(tablink of tablinks){
+          tablink.classList.remove('active-link');
+      }
+      for(tabcontent of tabcontents){
+         tabcontent.classList.remove('active-tab');
+      }
+      event.currentTarget.classList.add('active-link');
+      document.getElementById(tabname).classList.add('active-tab');
+    }
+ </script>
+
+</body>
+</html>
